@@ -1,0 +1,10 @@
+{
+  "name": "meet.jonaszkadziela.pl",
+  "version": "1.0.0",
+  "description": "Website about Jonasz Kądziela",
+  "main": "index.html",
+  "author": "Jonasz Kądziela",
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
