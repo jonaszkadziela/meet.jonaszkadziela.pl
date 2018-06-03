@@ -35,4 +35,18 @@ $(document).ready(function()
   };
   navbarCollapse();
   $(window).scroll(navbarCollapse);
+
+  var typedOptions = {
+    strings: [
+      "pasjonuję się informatyką!",
+      "uwielbiam robotykę!",
+      "kocham poznawać nowe technologie!"
+    ],
+    typeSpeed: 60,
+    backSpeed: 30,
+    backDelay: 2000,
+    loop: true
+  }
+
+  var typed = new Typed(".js-intro", typedOptions);
 });

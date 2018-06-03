@@ -1,36 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 
-body
-{
+body {
   font-family: Roboto, Helvetica, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: $font-size-base;
 }
 
-a
-{
+a {
   transition: all 0.1s;
 }
 
-::selection
-{
+::selection {
   color: $white;
   background: $primary;
 }
 
-::-moz-selection
-{
+::-moz-selection {
   color: $white;
   background: $primary;
-}
-
-.vertical-center-outer
-{
-    display: table;
-}
-
-.vertical-center-inner
-{
-    display: table-cell;
-    vertical-align: middle;
 }
