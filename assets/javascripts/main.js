@@ -49,4 +49,9 @@ $(document).ready(function()
   }
 
   var typed = new Typed(".js-intro", typedOptions);
+
+  $(".js-about-text").bind("click", function()
+  {
+    this.innerHTML == "Pokaż więcej" ? this.innerHTML = "Pokaż mniej" : this.innerHTML = "Pokaż więcej";
+  });
 });
