@@ -1,0 +1,14 @@
+.social-media {
+  font-size: 2rem;
+  a {
+    display: inline-block;
+    padding: 0 2rem;
+    color: $black;
+    &:hover, &:focus {
+      opacity: 0.7;
+    }
+    .jk-logo {
+      width: 35px;
+    }
+  }
+}

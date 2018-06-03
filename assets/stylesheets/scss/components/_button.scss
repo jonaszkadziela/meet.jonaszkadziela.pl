@@ -1,7 +1,7 @@
 .btn {
   border-radius: 2rem;
   padding: 0.4rem 1.2rem;
-  &:hover, &:focus {
+  &:hover, &:focus, &:active {
     box-shadow: none;
   }
 }

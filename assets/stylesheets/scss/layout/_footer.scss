@@ -1,0 +1,26 @@
+.footer {
+  padding: 4rem 0;
+  border-top: 1px solid $gray-300;
+  text-align: center;
+  .copyright {
+    margin: 1.5rem 0;
+    i {
+      position: relative;
+      top: 2px;
+      padding: 0 0.2rem;
+      font-size: 1.2em;
+      color: $highlight;
+    }
+    a {
+      color: $highlight;
+      &:hover, &:focus, &:active {
+        color: darken($highlight, 15%);
+      }
+    }
+  }
+  .go-up {
+    i {
+      margin-right: 1rem;
+    }
+  }
+}

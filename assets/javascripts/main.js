@@ -82,8 +82,7 @@ function typed()
     backDelay: 2000,
     loop: true
   }
-
-  var typed = new Typed(".js-intro", typedOptions);
+  new Typed(".js-intro", typedOptions);
 }
 
 /* --------------------------------
