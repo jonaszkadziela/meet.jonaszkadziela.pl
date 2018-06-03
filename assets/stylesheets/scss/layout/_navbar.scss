@@ -1,0 +1,32 @@
+.navbar
+{
+  margin-bottom: 0px;
+  padding: 1.25rem 1rem;
+  transition: all 0.3s ease-in-out;
+  .navbar-brand
+  {
+    img
+    {
+      width: 50px;
+      height: 50px;
+    }
+    span
+    {
+      padding: 0 0.5rem;
+      vertical-align: middle;
+    }
+  }
+  &.navbar-shrink
+  {
+    padding: 0.625rem 1rem;
+    background-color: rgba($black, 0.8);
+  }
+}
+
+@include media-breakpoint-down(sm)
+{
+  .navbar-collapse
+  {
+    margin: 0.5rem;
+  }
+}
