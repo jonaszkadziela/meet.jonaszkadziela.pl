@@ -17,6 +17,16 @@
   }
 }
 
+.section--primary {
+  background-color: $primary;
+  .section-title {
+    color: $white;
+    &:after {
+      background: $gray-900;
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .section {
     .section-title {

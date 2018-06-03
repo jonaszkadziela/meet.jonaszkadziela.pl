@@ -2,6 +2,32 @@
   border: none;
   border-radius: 0.8rem;
   padding: 2rem;
+  .card-body {
+    padding: 0;
+  }
+}
+
+.card-with-photo {
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  .row {
+    margin: 0 -1.25rem;
+    .col-sm-12 {
+      padding: 0 1.25rem;
+    }
+  }
+  .card-image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid $gray-300;
+  }
+  .card-body {
+    font-size: 1rem;
+    text-align: justify;
+    .card-title {
+      font-size: 2.5rem;
+    }
+  }
 }
 
 .card-button {
@@ -23,6 +49,7 @@
   .card-body {
     color: $gray-300;
     margin-left: 1rem;
+    padding: 1rem;
     font-size: 2.25rem;
     .card-title {
       font-size: 6rem;
@@ -31,29 +58,19 @@
 }
 
 .card--about {
-  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.1);
-  padding-bottom: 2rem;
-  .card-image {
-    width: 200px;
-    height: auto;
-    margin-left: 1rem;
-    border: 1px solid $gray-300;
-  }
-  .card-body {
-    font-size: 1rem;
-    text-align: justify;
-    .card-title {
-      font-size: 2.5rem;
-    }
-  }
+  margin-bottom: 2rem;
   .card-more {
-    margin: 2rem 1.25rem 0 1.25rem;
+    margin-top: 2rem;
     border-top: 1px solid $gray-300;
     .card-body {
       margin: 2rem 0 0.5rem 0;
       padding: 0;
     }
   }
+}
+
+.card--authorities {
+  margin-bottom: 4rem;
 }
 
 @include media-breakpoint-down(md) {
@@ -70,6 +87,10 @@
 }
 
 @include media-breakpoint-down(sm) {
+  .card {
+    width: 90%;
+    margin: auto;
+  }
   .card--intro {
     .card-image {
       width: 50px;
@@ -84,17 +105,22 @@
       }
     }
   }
-  .card--about {
-    padding: 0.5rem;
-    padding-bottom: 2rem;
+  .card-with-photo {
+    padding: 2rem;
     .card-image {
       display: block;
-      margin: 1rem auto;
+      margin: 0 auto 2rem auto;
     }
     .card-body {
       .card-title {
         font-size: 1.8rem;
       }
     }
+  }
+  .card--about {
+    margin-bottom: 1rem;
+  }
+  .card--authorities {
+    margin-bottom: 2.5rem;
   }
 }
