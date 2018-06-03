@@ -1,41 +1,76 @@
+/* --------------------------------
+Main Function
+-------------------------------- */
+
 $(document).ready(function()
 {
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function()
-  {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname)
-    {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length)
-      {
-        $('html, body').animate({
-          scrollTop: (target.offset().top - 80)
-        }, "slow");
-        return false;
-      }
-    }
-  });
+  typed();
+  navbarCollapse();
+  nicescroll();
 
-  $('body').scrollspy(
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on("click", linkTrigger);
+  $(window).on("scroll", navbarCollapse);
+  $(window).on("resize", nicescroll);
+
+  $("body").scrollspy(
   {
-    target: '.js-nav',
+    target: ".js-nav",
     offset: 80
   });
-
-  function navbarCollapse()
+  $(".js-about-text").click(function()
   {
-    if ($(".js-nav").offset().top > 100)
-    {
-      $(".js-nav").addClass("navbar-shrink");
-    }
-    else
-    {
-      $(".js-nav").removeClass("navbar-shrink");
-    }
-  };
-  navbarCollapse();
-  $(window).scroll(navbarCollapse);
+    objectSwapText($(".js-about-text"), "Pokaż więcej", "Pokaż mniej");
+  });
 
+  new ResizeSensor(jQuery('body'), function()
+  { 
+    $("html").getNiceScroll().resize();
+  });
+});
+
+/* --------------------------------
+Function Navbar Collapse
+-------------------------------- */
+
+function navbarCollapse()
+{
+  if ($(".js-nav").offset().top > 100)
+  {
+    $(".js-nav").addClass("navbar-shrink");
+  }
+  else
+  {
+    $(".js-nav").removeClass("navbar-shrink");
+  }
+};
+
+/* --------------------------------
+Function Link Trigger
+-------------------------------- */
+
+function linkTrigger()
+{
+  if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname)
+  {
+    var target = $(this.hash);
+    target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+    if (target.length)
+    {
+      $("html, body").animate(
+      {
+        scrollTop: (target.offset().top - 80)
+      }, "slow");
+      return false;
+    }
+  }
+}
+
+/* --------------------------------
+Typed.js Setup
+-------------------------------- */
+
+function typed()
+{
   var typedOptions = {
     strings: [
       "pasjonuję się informatyką!",
@@ -49,9 +84,45 @@ $(document).ready(function()
   }
 
   var typed = new Typed(".js-intro", typedOptions);
+}
 
-  $(".js-about-text").bind("click", function()
+/* --------------------------------
+Nicescroll.js Setup
+-------------------------------- */
+
+function nicescroll()
+{
+  testExp = new RegExp("Android|webOS|iPhone|iPad|BlackBerry|Windows Phone|Opera Mini|IEMobile|Mobile", "i");
+  if (jQuery().niceScroll)
   {
-    this.innerHTML == "Pokaż więcej" ? this.innerHTML = "Pokaż mniej" : this.innerHTML = "Pokaż więcej";
-  });
-});
+    if (!(testExp.test(navigator.userAgent)))
+    {
+      $("html").niceScroll
+      ({
+        scrollspeed: 40,
+        mousescrollstep: 38,
+        cursorwidth: 8,
+        cursorborder: "1px solid #555",
+        cursorborderradius: "10px",
+        cursorcolor: '#111',
+        cursoropacitymax: 0.5,
+        touchemulate: true,
+        preventmultitouchscrolling: false, 
+        autohidemode: true
+      });
+    }
+    else
+    {
+      $("html").getNiceScroll().remove();
+    }
+  }
+}
+
+/* --------------------------------
+Function Object Swap Text
+-------------------------------- */
+
+function objectSwapText(obj, text1, text2)
+{
+  obj.html() == text1 ? obj.html(text2) : obj.html(text1);
+}
