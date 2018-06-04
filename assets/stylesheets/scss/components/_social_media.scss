@@ -3,12 +3,9 @@
   a {
     display: inline-block;
     padding: 0 2rem;
-    color: $black;
+    color: $primary;
     &:hover, &:focus {
-      opacity: 0.7;
-    }
-    .jk-logo {
-      width: 35px;
+      color: darken($primary, 15%);
     }
   }
 }

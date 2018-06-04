@@ -1,6 +1,9 @@
 .typed-cursor {
   margin-left: 0.5rem;
   opacity: 1;
+}
+
+.typed-cursor--blink {
   animation: blink 0.7s infinite;
 }
 
