@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 
 body {
+  min-width: 325px;
   font-family: Roboto, Helvetica, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: $font-size-base;
