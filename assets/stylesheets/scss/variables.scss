@@ -3,3 +3,7 @@ $secondary: #0c0e7c;
 $highlight: #bc4b56;
 
 $gradient-primary: linear-gradient(135deg, $primary 0%, $secondary 100%);
+
+$box-shadow-sm: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+$box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.15);
+$box-shadow-lg: 0 0 30px 5px rgba(0, 0, 0, 0.25);
