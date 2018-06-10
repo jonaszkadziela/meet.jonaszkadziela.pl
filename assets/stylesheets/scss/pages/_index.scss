@@ -71,6 +71,7 @@
   }
   .card-body {
     background-color: $white;
+    border-top: 1px solid $gray-300;
     border-radius: 0 0 0.8rem 0.8rem;
   }
 }
