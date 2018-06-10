@@ -58,7 +58,7 @@ function linkTrigger()
     {
       $("html, body").animate(
       {
-        scrollTop: (target.offset().top - 80)
+        scrollTop: (target.offset().top - (80 - 1))
       }, "slow");
       return false;
     }

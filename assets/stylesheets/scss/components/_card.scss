@@ -91,10 +91,13 @@
     width: 90%;
     margin: auto;
   }
-  .card-section-title {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
+  .card-section {
+    margin-bottom: 2rem;
+    .card-section-title {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
   }
   .card-with-horizontal-image {
     padding: 2rem;
