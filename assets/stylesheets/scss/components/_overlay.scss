@@ -1,12 +1,15 @@
 .overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
+}
+
+.overlay--link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   transition: background-color 0.15s ease 0s;
   border-radius: inherit;
   &:hover {
@@ -23,8 +26,13 @@
   }
 }
 
+.overlay--dark {
+  background-color: rgba($black, 0.2);
+  z-index: -1;
+}
+
 @include media-breakpoint-down(sm) {
-  .overlay {
+  .overlay--link {
     i {
       font-size: 1.25rem;
     }

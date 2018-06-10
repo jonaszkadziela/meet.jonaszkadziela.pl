@@ -1,4 +1,4 @@
-.card--intro {
+.card--cta {
   background-color: rgba(#080f6d, 0.5);
   box-shadow: $box-shadow-lg;
   .card-image {
@@ -67,8 +67,15 @@
   padding: 0 0.5rem;
 }
 
+.card--more {
+  text-align: center;
+  .card-body {
+    font-size: 2rem;
+  }
+}
+
 @include media-breakpoint-down(md) {
-  .card--intro {
+  .card--cta {
     .card-body {
       .card-title {
         font-size: 4rem;
@@ -87,7 +94,7 @@
 }
 
 @include media-breakpoint-down(sm) {
-  .card--intro {
+  .card--cta {
     .card-image {
       width: 50px;
       height: auto;
@@ -124,6 +131,12 @@
     margin-bottom: 1rem;
     &:last-child {
       margin: 0;
+    }
+  }
+  .card--more {
+    padding: 1rem;
+    .card-body {
+      font-size: 1.25rem;
     }
   }
 }

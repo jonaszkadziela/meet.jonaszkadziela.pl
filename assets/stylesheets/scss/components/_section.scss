@@ -27,6 +27,21 @@
   }
 }
 
+.section--cta {
+  position: relative;
+  background: $black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+  .section-title {
+    color: $white;
+    &:after {
+      background: $white;
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .section {
     .section-title {
