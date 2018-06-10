@@ -34,7 +34,19 @@
   padding: 0rem;
   font-size: 1.25rem;
   text-align: center;
+  .card-img-top {
+    border-radius: 0.8rem 0.8rem 0 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    img {
+      border-radius: inherit;
+    }
+  }
   .card-body {
+    background-color: $white;
+    border-top: 1px solid $gray-300;
+    border-radius: 0 0 0.8rem 0.8rem;
     .card-title {
       margin: 0.75rem;
     }
@@ -78,11 +90,17 @@
   .card-section-title {
     font-size: 2rem;
     font-weight: 400;
-    margin-left: -0.5rem;
     margin-bottom: 1.5rem;
   }
   .card {
     box-shadow: $box-shadow-sm;
+  }
+}
+
+.card-section--flat {
+  .card {
+    box-shadow: none;
+    border: 1px solid $gray-300;
   }
 }
 
@@ -94,9 +112,14 @@
   .card-section {
     margin-bottom: 2rem;
     .card-section-title {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       text-align: center;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+  }
+  .card-section--flat {
+    .card-section-title {
+      margin-bottom: 1.25rem;
     }
   }
   .card-with-horizontal-image {

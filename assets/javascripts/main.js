@@ -7,6 +7,7 @@ $(document).ready(function()
   typed();
   navbarCollapse();
   nicescroll();
+  lightgallery($("#trips-gallery"), 1);
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on("click", linkTrigger);
   $(window).on("scroll", navbarCollapse);
@@ -115,6 +116,31 @@ function nicescroll()
       $("html").getNiceScroll().remove();
     }
   }
+}
+
+/* --------------------------------
+lightGallery.js Setup
+-------------------------------- */
+
+function lightgallery(handle, galleryID)
+{
+  handle.lightGallery({
+    galleryId: galleryID,
+    selector: "a",
+    width: "1920px",
+    height: "1080px",
+    mode: "lg-slide",
+    addClass: "fixed-size",
+    counter: false,
+    download: false,
+    fullScreen: false,
+    autoplay: false,
+    share: false,
+    thumbnail: false,
+    autoplayControls: false,
+    actualSize: false,
+    speed: 500
+  });
 }
 
 /* --------------------------------

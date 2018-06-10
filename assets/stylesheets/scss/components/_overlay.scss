@@ -22,3 +22,11 @@
     font-size: 2rem;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .overlay {
+    i {
+      font-size: 1.25rem;
+    }
+  }
+}
