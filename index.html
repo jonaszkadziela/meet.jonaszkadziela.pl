@@ -24,31 +24,34 @@
 		<nav class="js-nav navbar navbar-expand-md navbar-dark fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/brand/jk-logo-white.svg" alt="JK Logo">
-					<span>Jonasz Kądziela</span>
+					<object class="brand-logo" type="image/svg+xml" data="assets/images/brand/jk-logo.svg">
+						JK Logo
+					</object>
+					<span class="overlay"></span>
+					<span class="brand-name">Jonasz Kądziela</span>
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarCollapse">
+				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#intro">Wstęp</a>
+							<a class="js-scroll-trigger nav-link" href="#intro">Wstęp</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#about">O mnie</a>
+							<a class="js-scroll-trigger nav-link" href="#about">O mnie</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#mentors">Mentorzy</a>
+							<a class="js-scroll-trigger nav-link" href="#mentors">Mentorzy</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#hobbies">Hobby</a>
+							<a class="js-scroll-trigger nav-link" href="#hobbies">Hobby</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#favourites">Ulubione</a>
+							<a class="js-scroll-trigger nav-link" href="#favourites">Ulubione</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#trips">Podróże</a>
+							<a class="js-scroll-trigger nav-link" href="#trips">Podróże</a>
 						</li>
 					</ul>
 				</div>
@@ -107,7 +110,7 @@
 							</div>
 						</div>
 					</div>
-					<div id="about-text-collapse" class="collapse card-more">
+					<div id="about-me-collapse" class="collapse card-collapse">
 						<div class="card-body">
 							<h3 class="card-title">
 								Rozwinięcie
@@ -142,7 +145,7 @@
 						</div>
 					</div>
 					<div class="card-button">
-						<a class="js-about-text btn btn-primary" data-toggle="collapse" href="#about-text-collapse" role="button" aria-expanded="false" aria-controls="about-text-collapse">Pokaż więcej</a>
+						<a class="js-read-more btn btn-primary shadow-sm-bottom" data-toggle="collapse" href="#about-me-collapse" role="button" aria-expanded="false" aria-controls="about-me-collapse">Pokaż więcej</a>
 					</div>
 				</div>
 			</div>
@@ -169,6 +172,19 @@
 							</div>
 						</div>
 					</div>
+					<div id="about-elon-musk-collapse" class="collapse card-collapse">
+						<div class="card-body">
+							<p class="card-text">
+								Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
+							</p>
+							<p class="card-text">
+								Proin faucibus, tortor eget maximus mollis, lectus purus placerat dui, ut dignissim lectus justo nec eros. Vivamus neque nisl, accumsan at feugiat a, pellentesque eu turpis.
+							</p>
+						</div>
+					</div>
+					<div class="card-button">
+						<a class="js-read-more btn btn-light shadow-sm-bottom" data-toggle="collapse" href="#about-elon-musk-collapse" role="button" aria-expanded="false" aria-controls="about-elon-musk-collapse">Pokaż więcej</a>
+					</div>
 				</div>
 				<div class="card card-with-horizontal-image card--mentor">
 					<div class="row align-items-center">
@@ -189,16 +205,29 @@
 							</div>
 						</div>
 					</div>
+					<div id="about-falco-girgis-collapse" class="collapse card-collapse">
+						<div class="card-body">
+							<p class="card-text">
+								Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
+							</p>
+							<p class="card-text">
+								Proin faucibus, tortor eget maximus mollis, lectus purus placerat dui, ut dignissim lectus justo nec eros. Vivamus neque nisl, accumsan at feugiat a, pellentesque eu turpis.
+							</p>
+						</div>
+					</div>
+					<div class="card-button">
+						<a class="js-read-more btn btn-light shadow-sm-bottom" data-toggle="collapse" href="#about-falco-girgis-collapse" role="button" aria-expanded="false" aria-controls="about-falco-girgis-collapse">Pokaż więcej</a>
+					</div>
 				</div>
 				<div class="card card-with-horizontal-image card--mentor">
 					<div class="row align-items-center">
 						<div class="col-sm-12 col-md-auto">
-							<img class="card-image rounded-circle" src="assets/images/mentors/thinmatrix.jpg" alt="ThinMatrix">
+							<img class="card-image rounded-circle" src="assets/images/mentors/karl-wimble.jpg" alt="Karl Wimble">
 						</div>
 						<div class="col-sm-12 col-md">
 							<div class="card-body">
 								<h3 class="card-title">
-									ThinMatrix
+									Karl Wimble
 								</h3>
 								<p class="card-text">
 									Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
@@ -208,6 +237,19 @@
 								</p>
 							</div>
 						</div>
+					</div>
+					<div id="about-karl-wimble-collapse" class="collapse card-collapse">
+						<div class="card-body">
+							<p class="card-text">
+								Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
+							</p>
+							<p class="card-text">
+								Proin faucibus, tortor eget maximus mollis, lectus purus placerat dui, ut dignissim lectus justo nec eros. Vivamus neque nisl, accumsan at feugiat a, pellentesque eu turpis.
+							</p>
+						</div>
+					</div>
+					<div class="card-button">
+						<a class="js-read-more btn btn-light shadow-sm-bottom" data-toggle="collapse" href="#about-karl-wimble-collapse" role="button" aria-expanded="false" aria-controls="about-karl-wimble-collapse">Pokaż więcej</a>
 					</div>
 				</div>
 				<div class="card card-with-horizontal-image card--mentor">
@@ -229,16 +271,29 @@
 							</div>
 						</div>
 					</div>
+					<div id="about-steve-jobs-collapse" class="collapse card-collapse">
+						<div class="card-body">
+							<p class="card-text">
+								Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
+							</p>
+							<p class="card-text">
+								Proin faucibus, tortor eget maximus mollis, lectus purus placerat dui, ut dignissim lectus justo nec eros. Vivamus neque nisl, accumsan at feugiat a, pellentesque eu turpis.
+							</p>
+						</div>
+					</div>
+					<div class="card-button">
+						<a class="js-read-more btn btn-light shadow-sm-bottom" data-toggle="collapse" href="#about-steve-jobs-collapse" role="button" aria-expanded="false" aria-controls="about-steve-jobs-collapse">Pokaż więcej</a>
+					</div>
 				</div>
 				<div class="card card-with-horizontal-image">
 					<div class="row align-items-center">
 						<div class="col-sm-12 col-md-auto">
-							<img class="card-image rounded-circle" src="assets/images/mentors/gower-brothers.jpg" alt="Gower Brothers">
+							<img class="card-image rounded-circle" src="assets/images/mentors/gower-brothers.jpg" alt="Bracia Gower">
 						</div>
 						<div class="col-sm-12 col-md">
 							<div class="card-body">
 								<h3 class="card-title">
-									Gower Brothers
+									Bracia Gower
 								</h3>
 								<p class="card-text">
 									Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
@@ -248,6 +303,19 @@
 								</p>
 							</div>
 						</div>
+					</div>
+					<div id="about-gower-brothers-collapse" class="collapse card-collapse">
+						<div class="card-body">
+							<p class="card-text">
+								Cras eu felis ac lorem pretium mollis et sed orci. Suspendisse urna ex, venenatis non lacus quis, molestie consectetur leo. Quisque quam tortor, malesuada in posuere et, vestibulum at ipsum. Sed molestie vitae turpis sed tincidunt. Vestibulum a lorem augue.
+							</p>
+							<p class="card-text">
+								Proin faucibus, tortor eget maximus mollis, lectus purus placerat dui, ut dignissim lectus justo nec eros. Vivamus neque nisl, accumsan at feugiat a, pellentesque eu turpis.
+							</p>
+						</div>
+					</div>
+					<div class="card-button">
+						<a class="js-read-more btn btn-light shadow-sm-bottom" data-toggle="collapse" href="#about-gower-brothers-collapse" role="button" aria-expanded="false" aria-controls="about-gower-brothers-collapse">Pokaż więcej</a>
 					</div>
 				</div>
 			</div>
@@ -317,7 +385,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt1872194/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/the-judge.jpg" alt="The Judge Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/the-judge.jpg" alt="Plakat The Judge">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -334,7 +402,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt0816692/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/interstellar.jpg" alt="Interstellar Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/interstellar.jpg" alt="Plakat Interstellar">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -351,7 +419,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt0068646/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/the-godfather.jpg" alt="The Godfather Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/the-godfather.jpg" alt="Plakat The Godfather">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -368,7 +436,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt1172049/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/demolition.jpg" alt="Demolition Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/demolition.jpg" alt="Plakat Demolition">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -385,7 +453,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt1675434/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/intouchables.jpg" alt="Intouchables Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/intouchables.jpg" alt="Plakat Intouchables">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -402,7 +470,7 @@
 							<div class="card card-with-vertical-image h-100">
 								<a href="https://www.imdb.com/title/tt4816364/" target="_blank">
 									<div class="card-img-top">
-										<img class="img-fluid" src="assets/images/favourites/posters/battlebots.jpg" alt="BattleBots Poster">
+										<img class="img-fluid" src="assets/images/favourites/movies/battlebots.jpg" alt="Plakat BattleBots">
 										<span class="overlay overlay--link">
 											<i class="fas fa-external-link-alt"></i>
 										</span>
@@ -636,7 +704,7 @@
 		<section id="trips" class="section">
 			<div class="container">
 				<h1 class="section-title">Moje podróże</h1>
-				<div id="trips-gallery" class="card-section card-section--flat">
+				<div class="js-trips-gallery card-section card-section--flat">
 					<h3 class="card-section-title">Piękne miejsca, które miałem przyjemność zwiedzić</h3>
 					<div class="row px-2 mb-3">
 						<div class="col-sm-12 col-md-4 card--trips">
@@ -802,7 +870,7 @@
 					Zaprojektowane i zaprogramowane z <i class="fas fa-heart"></i> przez <a href="https://www.jonaszkadziela.pl/" target="_blank">Jonasza Kądzielę</a>
 				</div>
 				<div class="go-up">
-					<a class="btn btn-primary js-scroll-trigger" href="#page-top">
+					<a class="js-scroll-trigger btn btn-primary" href="#page-top">
 						<i class="fas fa-chevron-up"></i>
 						<span>Wróć na górę strony</span>
 					</a>

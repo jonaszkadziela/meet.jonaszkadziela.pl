@@ -78,6 +78,15 @@
   }
 }
 
+.card-collapse {
+  margin-top: 2rem;
+  border-top: 1px solid $gray-300;
+  .card-body {
+    margin: 2rem 0 0.5rem 0;
+    padding: 0;
+  }
+}
+
 .card-section {
   box-shadow: $box-shadow;
   background-color: $white;
@@ -108,6 +117,11 @@
   .card, .card-section {
     width: 90%;
     margin: auto;
+  }
+  .card-button {
+    a {
+      bottom: -0.75rem;
+    }
   }
   .card-section {
     margin-bottom: 2rem;

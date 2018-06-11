@@ -7,7 +7,7 @@ $(document).ready(function()
   typed();
   navbarCollapse();
   nicescroll();
-  lightgallery($("#trips-gallery"), 1);
+  lightgallery($(".js-trips-gallery"), 1);
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on("click", linkTrigger);
   $(window).on("scroll", navbarCollapse);
@@ -18,12 +18,12 @@ $(document).ready(function()
     target: ".js-nav",
     offset: 80
   });
-  $(".js-about-text").click(function()
+  $(".js-read-more").click(function()
   {
-    objectSwapText($(".js-about-text"), "Pokaż więcej", "Pokaż mniej");
+    objectSwapText($(this), "Pokaż więcej", "Pokaż mniej");
   });
 
-  new ResizeSensor(jQuery('body'), function()
+  new ResizeSensor(jQuery("body"), function()
   { 
     $("html").getNiceScroll().resize();
   });
@@ -75,7 +75,8 @@ function typed()
   var typedOptions = {
     strings: [
       "pasjonuję się informatyką!",
-      "uwielbiam robotykę!",
+      "lubię budować roboty!",
+      "uwielbiam programować!",
       "kocham poznawać nowe technologie!"
     ],
     typeSpeed: 60,
@@ -104,7 +105,7 @@ function nicescroll()
         cursorwidth: 8,
         cursorborder: "1px solid #555",
         cursorborderradius: "10px",
-        cursorcolor: '#111',
+        cursorcolor: "#111",
         cursoropacitymax: 0.5,
         touchemulate: true,
         preventmultitouchscrolling: false, 
