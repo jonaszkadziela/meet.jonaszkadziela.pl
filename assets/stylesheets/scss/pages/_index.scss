@@ -25,18 +25,13 @@
 }
 
 .card--hobby {
+  max-width: 300px;
   .card {
-    max-width: 300px;
     position: relative;
+    width: 100%;
+    padding: 0 0 100% 0;
     border-radius: 50%;
     word-wrap: normal;
-    margin: auto;
-    &::after
-    {
-      content: "";
-      display: block;
-      padding-bottom: 100%;
-    }
     .card-body {
       position: absolute;
       left: 0;
@@ -66,6 +61,14 @@
   }
 }
 
+@include media-breakpoint-down(lg) {
+  .card--hobby {
+    .card-text {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 @include media-breakpoint-down(md) {
   .card--cta {
     .card-body {
@@ -79,6 +82,9 @@
   }
   .card--hobby {
     margin: 1rem 0;
+    .card-text {
+      font-size: 1.5rem;
+    }
   }
   .card--favourite {
     margin: 0.5rem 0;
@@ -105,14 +111,6 @@
   }
   .card--mentor {
     margin-bottom: 2.5rem;
-  }
-  .card--hobby {
-    &:first-child {
-      margin-top: 0;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
   .card--favourite {
     width: 50%;
