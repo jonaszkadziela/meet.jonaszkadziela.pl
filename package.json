@@ -5,6 +5,6 @@
   "main": "index.html",
   "author": "Jonasz Kądziela",
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.3.1"
   }
 }
